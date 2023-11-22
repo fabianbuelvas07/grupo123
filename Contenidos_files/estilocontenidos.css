@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    line-height: 1.6;
+    /* Establecer la imagen de fondo */
+    background-image: url('');
+    background-color: yellowgreen;
+
+    /* Controlar cómo se muestra la imagen de fondo */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen */
+    background-attachment: fixed; /* Fija la imagen de fondo para que no se desplace con el desplazamiento de la página */
+}
+h1 {
+    color: #000000;
+}
+h2 {
+    color: #000000;
+}
+h3 {
+    color: #333;
+}
+dd {
+    color: #302c2c;
+}
+strong {
+    font-weight: bold;
+}
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+details {
+    margin-left: 40px;
+}
+summary {
+    cursor: pointer;
+}
+.recuadro {
+    width: 1000px; /* Ancho del recuadro */
+    padding: 20px; /* Espaciado interno */
+    border: 2px solid #000; /* Borde sólido de 2 píxeles de grosor */
+    border-radius: 10px; /* Esquinas redondeadas */
+    background-color: #ecdaa7; /* Color de fondo */
+}
+*{
+    box-sizing: border-box;
+}
+
+header{
+    padding: 50px;
+    background-color: aqua;
+    text-align: center;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    background-color: #333;
+
+}
+
+nav a{
+    background-color: #122531; 
+    color: #b48181; 
+    padding: 14px 20px;
+    transition: background-color 0.5s, color 0.5s;
+    text-decoration: none;    
+}
+
+nav a:hover {
+    background-color: #edf3f3; 
+    color: #333; 
+    
+ }
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+  
+   
+
+aside{
+
+    flex: 30px;
+    background-color: bisque;
+    padding: 20px;
+
+}
+
+section{
+    flex: 70%;
+    background-color: rgb(218, 261, 23);
+    padding: 20px;
+}
+
+footer{
+    padding: 20px;
+    text-align: center;
+    background-color: hotpink;
+}
