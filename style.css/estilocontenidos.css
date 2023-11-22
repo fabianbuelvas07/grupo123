@@ -5,6 +5,7 @@ body {
     /* Establecer la imagen de fondo */
     background-image: url('');
 
+
     /* Controlar cómo se muestra la imagen de fondo */
     background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
     background-repeat: no-repeat; /* Evita la repetición de la imagen */
