@@ -42,3 +42,59 @@ summary {
     border-radius: 10px; /* Esquinas redondeadas */
     background-color: #ecdaa7; /* Color de fondo */
 }
+*{
+    box-sizing: border-box;
+}
+
+header{
+    padding: 50px;
+    background-color: aqua;
+    text-align: center;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    background-color: #333;
+
+}
+
+nav a{
+    background-color: #122531; 
+    color: #b48181; 
+    padding: 14px 20px;
+    transition: background-color 0.5s, color 0.5s;
+    text-decoration: none;    
+}
+
+nav a:hover {
+    background-color: #edf3f3; 
+    color: #333; 
+    
+ }
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+  
+   
+
+aside{
+
+    flex: 30px;
+    background-color: bisque;
+    padding: 20px;
+
+}
+
+section{
+    flex: 70%;
+    background-color: rgb(218, 261, 23);
+    padding: 20px;
+}
+
+footer{
+    padding: 20px;
+    text-align: center;
+    background-color: hotpink;
+}
