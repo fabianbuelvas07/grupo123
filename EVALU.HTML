@@ -31,93 +31,31 @@
         <a href="Créditos.html" class="card__button">CREDITOS</a>
 
         
-<section class="section container">
-<h1 class="title">Ejemplo de Evaluación</h1>
-<p class="subtitle">Una <strong>evaluación sencilla</strong> usando JavaScript</p>
-<article class="panel">
-<p class="panel-heading">¿Qué es el phishing en el contexto de la ciberseguridad?</p>
-<a class="panel-block" onclick="seleccionar(this)">Un software malicioso.</a>
-<a class="panel-block" onclick="seleccionar(this)">Un cortafuegos.</a>
-<a id="correcta1" class="panel-block" onclick="seleccionar(this)">Una técnica para robar contraseñas.</a>
-<a class="panel-block" onclick="seleccionar(this)">Un sistema de encriptación avanzado.</a>
-<p id="mensaje1" class="panel-block"></p>
-</article>
-</section>
-<script>
-function seleccionar(opcion) {
-let mensaje = document.getElementById("mensaje1")
-if (opcion.id === "correcta1") {
-mensaje.innerText = "Correcto, Una técnica para robar contraseñas."
-mensaje.classList.remove('has-text-danger')
-mensaje.classList.add('has-text-primary')
-} else {
-mensaje.innerText = "Error!! " + opcion.innerText + " no es pishing"
-mensaje.classList.remove('has-text-primary')
-mensaje.classList.add('has-text-danger')
-}
-}
-</script>
-
-<section class="section container">
-    <h1 class="title">Ejemplo de Evaluación</h1>
-    <p class="subtitle">Una <strong>evaluación sencilla</strong> usando JavaScript</p>
-    <article class="panel">
-    <p class="panel-heading">¿Cúal es la Capital de Colombia?</p>
-    <a class="panel-block" onclick="seleccionar(this)">Armenia</a>
-    <a class="panel-block" onclick="seleccionar(this)">Santamarta</a>
-    <a id="correcta2" class="panel-block" onclick="seleccionar(this)">Bogotá</a>
-    <a class="panel-block" onclick="seleccionar(this)">Medellín</a>
-    <p id="mensaje1" class="panel-block"></p>
-    </article>
-    </section>
-    <script>
-    function seleccionar(opcion) {
-    let mensaje = document.getElementById("mensaje1")
-    if (opcion.id === "correcta2") {
-    mensaje.innerText = "Correcto, Bogotá es la capital de Colombia"
-    mensaje.classList.remove('has-text-danger')
-    mensaje.classList.add('has-text-primary')
-    } else {
-    mensaje.innerText = "Error!! " + opcion.innerText + " no es la capital de Colombia"
-    mensaje.classList.remove('has-text-primary')
-    mensaje.classList.add('has-text-danger')
-    }
-    }
-    </script>
-    <section class="section container">
-        <h1 class="title">Ejemplo de Evaluación</h1>
-        <p class="subtitle">Una <strong>evaluación sencilla</strong> usando JavaScript</p>
-        <article class="panel">
-        <p class="panel-heading">¿Cúal es la Capital de Colombia?</p>
-        <a class="panel-block" onclick="seleccionar(this)">Armenia</a>
-        <a class="panel-block" onclick="seleccionar(this)">Santamarta</a>
-        <a id="correcta3" class="panel-block" onclick="seleccionar(this)">Bogotá</a>
-        <a class="panel-block" onclick="seleccionar(this)">Medellín</a>
-        <p id="mensaje1" class="panel-block"></p>
-        </article>
-        </section>
-        <script>
-        function seleccionar(opcion) {
-        let mensaje = document.getElementById("mensaje1")
-        if (opcion.id === "correcta3") {
-        mensaje.innerText = "Correcto, Bogotá es la capital de Colombia"
-        mensaje.classList.remove('has-text-danger')
-        mensaje.classList.add('has-text-primary')
-        } else {
-        mensaje.innerText = "Error!! " + opcion.innerText + " no es la capital de Colombia"
-        mensaje.classList.remove('has-text-primary')
-        mensaje.classList.add('has-text-danger')
-        }
-        }
-        </script>
-        <section class="section container">
+        <!DOCTYPE html> 
+        <html lang="es"> 
+        <head> 
+          <meta charset="UTF-8">   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+          <title>Ejemplo de Evaluación</title> 
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css"> 
+        </head> 
+        <body> 
+            <!DOCTYPE html>
+            <html lang="es">
+            <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Ejemplo de Evaluación</title>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+            </head>
+            <body>
+            <section class="section container">
             <h1 class="title">Ejemplo de Evaluación</h1>
             <p class="subtitle">Una <strong>evaluación sencilla</strong> usando JavaScript</p>
             <article class="panel">
-            <p class="panel-heading">¿Cúal es la Capital de Colombia?</p>
+            <p class="panel-heading">¿Cuál de las siguientes prácticas es más efectiva para proteger tus contraseñas?</p>
             <a class="panel-block" onclick="seleccionar(this)">Armenia</a>
             <a class="panel-block" onclick="seleccionar(this)">Santamarta</a>
-            <a id="correcta4" class="panel-block" onclick="seleccionar(this)">Bogotá</a>
+            <a id="correcta1" class="panel-block" onclick="seleccionar(this)">Usar contraseñas largas y complejas.</a>
             <a class="panel-block" onclick="seleccionar(this)">Medellín</a>
             <p id="mensaje1" class="panel-block"></p>
             </article>
@@ -125,8 +63,8 @@ mensaje.classList.add('has-text-danger')
             <script>
             function seleccionar(opcion) {
             let mensaje = document.getElementById("mensaje1")
-            if (opcion.id === "correcta4") {
-            mensaje.innerText = "Correcto, Bogotá es la capital de Colombia"
+            if (opcion.id === "correcta1") {
+            mensaje.innerText = "Correcto, Usar contraseñas largas y complejas."
             mensaje.classList.remove('has-text-danger')
             mensaje.classList.add('has-text-primary')
             } else {
@@ -136,31 +74,32 @@ mensaje.classList.add('has-text-danger')
             }
             }
             </script>
+
             <section class="section container">
-                <h1 class="title">Ejemplo de Evaluación</h1>
-                <p class="subtitle">Una <strong>evaluación sencilla</strong> usando JavaScript</p>
-                <article class="panel">
-                <p class="panel-heading">¿Cúal es la Capital de Colombia?</p>
-                <a class="panel-block" onclick="seleccionar(this)">Armenia</a>
-                <a class="panel-block" onclick="seleccionar(this)">Santamarta</a>
-                <a id="correcta5" class="panel-block" onclick="seleccionar(this)">Bogotá</a>
-                <a class="panel-block" onclick="seleccionar(this)">Medellín</a>
-                <p id="mensaje1" class="panel-block"></p>
-                </article>
-                </section>
-                <script>
-                function seleccionar(opcion) {
-                let mensaje = document.getElementById("mensaje1")
-                if (opcion.id === "correcta5") {
-                mensaje.innerText = "Correcto, Bogotá es la capital de Colombia"
-                mensaje.classList.remove('has-text-danger')
-                mensaje.classList.add('has-text-primary')
-                } else {
-                mensaje.innerText = "Error!! " + opcion.innerText + " no es la capital de Colombia"
-                mensaje.classList.remove('has-text-primary')
-                mensaje.classList.add('has-text-danger')
-                }
-                }
-                </script>
-</body>
-</html>
+            <h1 class="title">Ejemplo de Evaluación</h1>
+            <p class="subtitle">Una <strong>evaluación sencilla</strong> usando JavaScript</p>
+            <article class="panel">
+            <p class="panel-heading">¿Cuál de las siguientes prácticas es más efectiva para proteger tus contraseñas?</p>
+            <a class="panel-block" onclick="seleccionar(this)">Armenia</a>
+            <a class="panel-block" onclick="seleccionar(this)">Santamarta</a>
+            <a id="correcta1" class="panel-block" onclick="seleccionar(this)">Usar contraseñas largas y complejas.</a>
+            <a class="panel-block" onclick="seleccionar(this)">Medellín</a>
+            <p id="mensaje1" class="panel-block"></p>
+            </article>
+            </section>
+            <script>
+            function seleccionar(opcion) {
+            let mensaje = document.getElementById("mensaje1")
+            if (opcion.id === "correcta1") {
+            mensaje.innerText = "Correcto, Usar contraseñas largas y complejas."
+            mensaje.classList.remove('has-text-danger')
+            mensaje.classList.add('has-text-primary')
+            } else {
+            mensaje.innerText = "Error!! " + opcion.innerText + " no es la capital de Colombia"
+            mensaje.classList.remove('has-text-primary')
+            mensaje.classList.add('has-text-danger')
+            }
+            }
+            </script>
+            </body>
+            </html>
