@@ -5,12 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ejemplo de Evaluación</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+
 </head>
 <body>
     <header class="title">
         <h1>CIBER SEGURIDAD</h1>
     </header>
-
+    
     <div class="container">
         <header class="header">
             <h1>MARENGALLEGUILAR</h1>
@@ -23,6 +24,8 @@
         <a href="EVALU.HTML" class="card__button">EVALUACIONES</a>
         <a href="Créditos.html" class="card__button">CREDITOS</a>
         
+        <main class="content">
+        <article class="article">
         <section class="section container">
             <h1 class="title"> 1# pregunta</h1>
             
@@ -34,6 +37,7 @@
                 <a class="panel-block" onclick="seleccionar(this)">Un sistema de encriptación avanzado.</a>
                 <p id="mensaje1" class="panel-block"></p>
             </article>
+        </articule>
         </section>
     </div>
 
@@ -51,6 +55,7 @@
             }
         }
     </script>
+    </articule>
 
 <section class="section container">
     <h1 class="title">2# pregunta</h1>
@@ -85,17 +90,17 @@ function seleccionar(opcion) {
         <p class="panel-heading">¿¿Qué es un ataque de fuerza bruta en el ámbito de la ciberseguridad?</p>
         <a class="panel-block" onclick="seleccionar(this)">Un ataque que aprovecha vulnerabilidades de software.</a>
         <a class="panel-block" onclick="seleccionar(this)">Un ataque que utiliza la fuerza física para acceder a sistemas.</a>
-        <a id="correcta2" class="panel-block" onclick="seleccionar(this)"> Un intento de obtener información confidencial mediante engaños.</a>
+        <a id="correcta3" class="panel-block" onclick="seleccionar(this)"> Un intento de obtener información confidencial mediante engaños.</a>
         <a class="panel-block" onclick="seleccionar(this)">Un intento de adivinar contraseñas mediante la prueba sistemática de todas las combinaciones posibles.</a>
-        <p id="mensaje2" class="panel-block"></p>
+        <p id="mensaje3" class="panel-block"></p>
     </article>
 </section>
 </div>
 
 <script>
 function seleccionar(opcion) {
-    let mensaje = document.getElementById("mensaje2");
-    if (opcion.id === "correcta2") {
+    let mensaje = document.getElementById("mensaje3");
+    if (opcion.id === "correcta3") {
         mensaje.innerText = "Correcto, Un intento de obtener información confidencial mediante engaños.";
         mensaje.classList.remove('has-text-danger');
         mensaje.classList.add('has-text-primary');
