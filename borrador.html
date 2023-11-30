@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ejemplo de Evaluación</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+</head>
+<body>
+    <header class="title">
+        <h1>CIBER SEGURIDAD</h1>
+    </header>
+
+    <div class="container">
+        <header class="header">
+            <h1>MARENGALLEGUILAR</h1>
+        </header>
+        
+        <a href="Inicio.html" class="card__button">INICIO</a>
+        <a href="Contenidos.html" class="card__button">CONTENIDOS</a>
+        <a href="Actividades.html" class="card__button">ACTIVIDADES</a>
+        <a href="materialcomplementario.html" class="card__button">MATERIAL COMPLEMENTARIO</a>
+        <a href="EVALU.HTML" class="card__button">EVALUACIONES</a>
+        <a href="Créditos.html" class="card__button">CREDITOS</a>
+        
+        <section class="section container">
+            <h1 class="title"> 1# pregunta</h1>
+            
+            <article class="panel">
+                <p class="panel-heading">¿Qué es el phishing en el contexto de la ciberseguridad?</p>
+                <a class="panel-block" onclick="seleccionar(this)">Un software malicioso.</a>
+                <a class="panel-block" onclick="seleccionar(this)">Un cortafuegos.</a>
+                <a id="correcta1" class="panel-block" onclick="seleccionar(this)">Una técnica para robar contraseñas.</a>
+                <a class="panel-block" onclick="seleccionar(this)">Un sistema de encriptación avanzado.</a>
+                <p id="mensaje1" class="panel-block"></p>
+            </article>
+        </section>
+    </div>
+
+    <script>
+        function seleccionar(opcion) {
+            let mensaje = document.getElementById("mensaje1");
+            if (opcion.id === "correcta1") {
+                mensaje.innerText = "Correcto, Una técnica para robar contraseñas.";
+                mensaje.classList.remove('has-text-danger');
+                mensaje.classList.add('has-text-primary');
+            } else {
+                mensaje.innerText = "Error!! " + opcion.innerText + " no es phishing";
+                mensaje.classList.remove('has-text-primary');
+                mensaje.classList.add('has-text-danger');
+            }
+        }
+    </script>
+
+<section class="section container">
+    <h1 class="title">2# pregunta</h1>
+    <article class="panel">
+        <p class="panel-heading">¿¿Cuál de las siguientes opciones es un ejemplo de autenticación de dos factores (2FA)?</p>
+        <a class="panel-block" onclick="seleccionar(this)">Contraseña única.</a>
+        <a id="correcta2" class="panel-block" onclick="seleccionar(this)">Huella digital.</a>
+        <a class="panel-block" onclick="seleccionar(this)">Contraseña estática.</a>
+        <a class="panel-block" onclick="seleccionar(this)">Nombre de usuario.</a>
+        <p id="mensaje2" class="panel-block"></p>
+    </article>
+</section>
+</div>
+
+<script>
+function seleccionar(opcion) {
+    let mensaje = document.getElementById("mensaje2");
+    if (opcion.id === "correcta2") {
+        mensaje.innerText = "Correcto, huella digital.";
+        mensaje.classList.remove('has-text-danger');
+        mensaje.classList.add('has-text-primary');
+    } else {
+        mensaje.innerText = "Error!! " + opcion.innerText + " respuesta incorrecta";
+        mensaje.classList.remove('has-text-primary');
+        mensaje.classList.add('has-text-danger');
+    }
+}
+</script>
+<section class="section container">
+    <h1 class="title">3# pregunta</h1>
+    <article class="panel">
+        <p class="panel-heading">¿¿Qué es un ataque de fuerza bruta en el ámbito de la ciberseguridad?</p>
+        <a class="panel-block" onclick="seleccionar(this)">Un ataque que aprovecha vulnerabilidades de software.</a>
+        <a class="panel-block" onclick="seleccionar(this)">Un ataque que utiliza la fuerza física para acceder a sistemas.</a>
+        <a id="correcta2" class="panel-block" onclick="seleccionar(this)"> Un intento de obtener información confidencial mediante engaños.</a>
+        <a class="panel-block" onclick="seleccionar(this)">Un intento de adivinar contraseñas mediante la prueba sistemática de todas las combinaciones posibles.</a>
+        <p id="mensaje2" class="panel-block"></p>
+    </article>
+</section>
+</div>
+
+<script>
+function seleccionar(opcion) {
+    let mensaje = document.getElementById("mensaje2");
+    if (opcion.id === "correcta2") {
+        mensaje.innerText = "Correcto, Un intento de obtener información confidencial mediante engaños.";
+        mensaje.classList.remove('has-text-danger');
+        mensaje.classList.add('has-text-primary');
+    } else {
+        mensaje.innerText = "Error!! " + opcion.innerText + " respuesta incorrecta";
+        mensaje.classList.remove('has-text-primary');
+        mensaje.classList.add('has-text-danger');
+    }
+}
+</script>
+<section class="section container">
+    <h1 class="title">4# pregunta</h1>
+    <article class="panel">
+        <p class="panel-heading">¿Cuál de las siguientes prácticas contribuye a mejorar la seguridad de las contraseñas?</p>
+        <a class="panel-block" onclick="seleccionar(this)">Cambiar las contraseñas con poca frecuencia.</a>
+        <a class="panel-block" onclick="seleccionar(this)">Utilizar la misma contraseña para múltiples cuentas.</a>
+        <a id="correcta2" class="panel-block" onclick="seleccionar(this)">Emplear contraseñas complejas y únicas para cada cuenta.</a>
+        <a class="panel-block" onclick="seleccionar(this)">Usar contraseñas cortas y sencillas.
+        </a>
+        <p id="mensaje2" class="panel-block"></p>
+    </article>
+</section>
+</div>
+
+<script>
+function seleccionar(opcion) {
+    let mensaje = document.getElementById("mensaje2");
+    if (opcion.id === "correcta2") {
+        mensaje.innerText = "Correcto,Usar contraseñas cortas y sencillas.";
+        mensaje.classList.remove('has-text-danger');
+        mensaje.classList.add('has-text-primary');
+    } else {
+        mensaje.innerText = "Error!! " + opcion.innerText + " respuesta incorrecta";
+        mensaje.classList.remove('has-text-primary');
+        mensaje.classList.add('has-text-danger');
+    }
+}
+</script>
+<section class="section container">
+    <h1 class="title">5# pregunta</h1>
+    <article class="panel">
+        <p class="panel-heading">¿Qué es un cortafuegos (firewall) en el contexto de la ciberseguridad?</p>
+        <a class="panel-block" onclick="seleccionar(this)">Un software antivirus.</a>
+        <a class="panel-block" onclick="seleccionar(this)">Un programa de respaldo de datos.</a>
+        <a id="correcta2" class="panel-block" onclick="seleccionar(this)">Un dispositivo que previene accesos no autorizados a una red.</a>
+        <a class="panel-block" onclick="seleccionar(this)">Una técnica de encriptación avanzada.</a>
+        <p id="mensaje2" class="panel-block"></p>
+    </article>
+</section>
+</div>
+
+<script>
+function seleccionar(opcion) {
+    let mensaje = document.getElementById("mensaje2");
+    if (opcion.id === "correcta2") {
+        mensaje.innerText = "Correcto, Un dispositivo que previene accesos no autorizados a una red..";
+        mensaje.classList.remove('has-text-danger');
+        mensaje.classList.add('has-text-primary');
+    } else {
+        mensaje.innerText = "Error!! " + opcion.innerText + " respuesta incorrecta";
+        mensaje.classList.remove('has-text-primary');
+        mensaje.classList.add('has-text-danger');
+    }
+}
+</script>
+<section class="section container">
+    <h1 class="title">Ejemplo de Evaluación</h1>
+    <article class="panel">
+        <p class="panel-heading">¿Qué es berenjena</p>
+        <a class="panel-block" onclick="seleccionar(this)">Un software malicioso.</a>
+        <a class="panel-block" onclick="seleccionar(this)">Un cortafuegos.</a>
+        <a id="correcta2" class="panel-block" onclick="seleccionar(this)">Una verdura</a>
+        <a class="panel-block" onclick="seleccionar(this)">Un sistema de encriptación avanzado.</a>
+        <p id="mensaje2" class="panel-block"></p>
+    </article>
+</section>
+</div>
+
+<script>
+function seleccionar(opcion) {
+    let mensaje = document.getElementById("mensaje2");
+    if (opcion.id === "correcta2") {
+        mensaje.innerText = "Correcto, Una verdura.";
+        mensaje.classList.remove('has-text-danger');
+        mensaje.classList.add('has-text-primary');
+    } else {
+        mensaje.innerText = "Error!! " + opcion.innerText + " eso no es un verdura";
+        mensaje.classList.remove('has-text-primary');
+        mensaje.classList.add('has-text-danger');
+    }
+}
+</script>
+
+</body>
+</html>
