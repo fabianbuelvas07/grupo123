@@ -136,8 +136,8 @@ summary {
     cursor: pointer;
 }
 .recuadro {
-    width: 400px; /* Ancho del recuadro */
-    padding: 20px; /* Espaciado interno */
+    width: 300px; /* Ancho del recuadro */
+    padding: 10px; /* Espaciado interno */
     border: 2px solid #000; /* Borde sólido de 2 píxeles de grosor */
     border-radius: 10px; /* Esquinas redondeadas */
     background-color: #ecdaa7; /* Color de fondo */
