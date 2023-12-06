@@ -7,9 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>REDA</title>
     <!-- Font -->
-    <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Manjari&display=swap">
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css/ESTILOS.CSS">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Manjari">
+    <link rel="stylesheet" href="STYLE/ESTILOS.CSS">
     <!--icons-->
     <link rel="icon" href="IMAGEN/materialimg.png" type="image/png">
     <style>
@@ -20,49 +19,19 @@
 
 body {
     
-    font-family: 'arial', sans-serif;
+    font-family: 'Manjari', sans-serif;
 }
-html {
-  --s: 200px; /* control the size */
-  --c: #fff; /* first color */
-  
-  --_g: #0000 8%,var(--c) 0 17%,#0000 0 58%;
-  background: 
-    linear-gradient(135deg,#0000 20.5%,var(--c) 0 29.5%,#0000 0) 0 calc(var(--s)/4),
-    linear-gradient( 45deg,var(--_g)) calc(var(--s)/2) 0,
-    linear-gradient(135deg,var(--_g),var(--c) 0 67%,#0000 0),        
-    linear-gradient( 45deg,var(--_g),var(--c) 0 67%,#0000 0 83%,var(--c) 0 92%,#0000 0),
-    #1095c1; /* second color */
-  background-size: var(--s) var(--s);
-}
-/* HEADER */
+h1{
+    font-family:"Audiowide", sans-serif;
 
+}
 .title h1 {
     padding: 20px 0;
     text-align: center;
     font-size: 2.9em;
     text-transform: uppercase;
     color: #df2929;
-}
-
-/* CONTAINER */
-
-.container {
-    width: 90%;
-    max-width: 1000px;
-    margin: 1.6em auto;
-    display: grid;
-    gap: 1.6em;
-    /* grid-template-columns: repeat(4, 1fr) 3%; */
-    grid-template-columns: repeat(6, 1fr);
-}
-
-.container>.header, .container>.content, .container>.sidebar, .container>.footer, .container>.card__button, .imgta2 {
-    background: #fff;
-    padding: 20px;
-    border: 1px solid #000000;
-    border-radius: 10px; /* Esquinas redondeadas */
-    box-shadow: 5px 5px 5px rgb(29, 28, 28);/*sombra*/
+    font-family:"Audiowide", sans-serif;
 }
 
 .container>.header, .container>.footer {
@@ -73,7 +42,7 @@ html {
 
 .container>.content {
     grid-column: span 4;
-    grid-row: span 4;
+    grid-row: span 3;
 }
 
 .content>.article {
@@ -85,90 +54,34 @@ html {
     box-shadow: 5px 5px 5px #070707;
 }
 
-.content .article h1,
-.content .article p {
-    padding: 10px;
-}
-
 .container>.sidebar {
     grid-column: span 2;
-    grid-row: span 1;
+    grid-row: span 2;
     background: #db8522;
-    background: url(IMAGEN/rtuy.gif);
-    background-size: cover;
+    background: url(IMG/5aacf931-fc4d-42d1-947f-c6c5272e4e8d.gif);
     background-position: center;
-    color: #ffffff;
+    color: #181515;
     display: relative;
     align-items: relative;
     justify-content: center;
+    background-position: center;
+    background-repeat: repeat; 
+    padding: 20px; 
+    background-size: auto; 
 }
 
 .container>.card__button {
-    background: #ffffff;
-    color: #000000;
-    height: 30px;
-    display: block;
-    padding: 12px 0;
-    text-decoration: none;
-    border-radius: 6px;
-    text-align: center;
-    ;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.5s ease;
-}
+    background-color: antiquewhite;
+    color: #0a0909;
 
+}
 .container>.card__button:hover {
     cursor: pointer;
     color: #4fd4cd;
-    background: #ffffff(255, 255, 255);
+    background: #e92525(255, 255, 255);
 }
 
 
-h1 {
-    color: #000000;
-}
-dd {
-    color: #302c2c;
-}
-strong {
-    font-weight: bold;
-}
-ul {
-    list-style-type: disc;
-    margin-left: 20px;
-}
-details {
-    margin-left: 40px;
-}
-summary {
-    cursor: pointer;
-}
-.recuadro {
-    width: 300px; /* Ancho del recuadro */
-    padding: 10px; /* Espaciado interno */
-    border: 2px solid #000; /* Borde sólido de 2 píxeles de grosor */
-    border-radius: 10px; /* Esquinas redondeadas */
-    background-color: #ecdaa7; /* Color de fondo */
-}
-/* MEDIA QUERIES */
-
-@media screen and (max-width: 768px) {
-    .header {
-        text-align: center;
-    }
-    .container .content {
-        grid-column: 1 / -1;
-    }
-    .container .sidebar {
-        grid-column: 1 / 6;
-    }
-
-    .container .card__button {
-        grid-column: 1/-1;
-    }
-}
     </style>
 </head>
 
@@ -217,13 +130,21 @@ summary {
             </article>
             <br>
         
-            <article>
-                <h1>videos relacionados </h1>
+            <article class="article">
+                <h1>videos relacionados 🎥... </h1>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/c7wAz9w4urY?si=gw95eBvhMTqbPFAt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 <br>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/Hvo275fmyOQ?si=f7UFqeidL2qk_Rmj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 <br>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/sk9dJtwZtlA?si=Ic5xuFjXWUi4lQSf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </article>
+            <br>
+            <article class="article">
+                <h1>PDFs relacionados... </h1>
+                <center><iframe width="500" height="600" src="PDF/guia_ciberseguridad_para_todos (1).pdf" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <br>
+                <iframe width="500" height="600" src="PDF/Libro-Ciberseguridad_A.Corletti_nov2017.pd (1).pdf" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+                
             </article>
 
         </main>
@@ -234,11 +155,8 @@ summary {
         <aside class="sidebar">
             
         </aside>
-       
-
         
-
-       
+        
     
         <footer class="footer">
             <p> &#169; Cristian Gallego - Alejandro Marchena - Danilo Aguilar - Fabian Buelvas 
