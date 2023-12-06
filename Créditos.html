@@ -9,12 +9,85 @@
     <!-- Font -->
     <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Manjari&display=swap">
     <!-- CSS -->
-    <link rel="stylesheet" href="style.css/ESTILOS.CSS">
+    <link rel="stylesheet" href="STYLE/ESTILOS.CSS">
     <!--icons-->
     <link rel="icon" href="IMG/creditosimg.png" type="image/png">
 </head>
 
 <body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            
+            font-family: 'Manjari', sans-serif;
+        }
+        h1{
+            font-family:"Audiowide", sans-serif;
+        
+        }
+        .title h1 {
+            padding: 20px 0;
+            text-align: center;
+            font-size: 2.9em;
+            text-transform: uppercase;
+            color: #db8522;
+            font-family:"Audiowide", sans-serif;
+            text-shadow: 1px 1px 2px #000000, -1px -1px 2px #0c0505;
+        }
+       
+        .container>.header, .container>.footer {
+            grid-column: 1/-1;
+            background-color: #9966db;
+            color: #ffffff;
+        }
+        
+        .container>.content {
+            grid-column: span 4;
+            grid-row: span 3;
+        }
+        
+        .content>.article {
+            background: #e94b4be8;
+            padding: 20px;
+            margin-top: 5px;
+            color: #070707;
+            border-radius: 10px; /* Esquinas redondeadas */
+            box-shadow: 5px 5px 5px #070707;
+        }
+        
+        .container>.sidebar {
+            grid-column: span 2;
+            grid-row: span 2;
+            background: #db8522;
+            color: #181515;
+            display: relative;
+            align-items: relative;
+            justify-content: center;
+            background-position: center;
+            background-repeat: repeat; 
+            padding: 20px; 
+            background-size: auto; 
+            background: url(IMG/whodatvillain.gif);
+        }
+        
+        .container>.card__button {
+            background-color: antiquewhite;
+            color: #0a0909;
+        
+        }
+        .container>.card__button:hover {
+            cursor: pointer;
+            color: #e94b4be8;
+            background: #e92525(255, 255, 255);
+        }
+    
+    </style>
+
+
 
     <header class="title">
         <h1>CREDITOS</h1>
@@ -63,15 +136,21 @@
                 <a href="https://co.pinterest.com/">https://co.pinterest.com/</a>
                 <h2>Actividades y evaluación creadas en:</h2>
                 <a href="https://es.educaplay.com/">https://es.educaplay.com/</a>
-            </article>
+                <h2>Libro tomado para el contenido</h2>
+                <a href="https://www.google.com.co/books/edition/La_Nube_Y_Ciber_Seguridad_Gu%C3%ADa_R%C3%A1pida/1VQ6DwAAQBAJ?hl=es&gbpv=1&dq=CIBERSEGURIDAD%20en%20la%20nube&pg=PT4&printsec=frontcover">La_Nube_Y_Ciber_Seguridad_Guía_Rápida//a>
+
+                
+            </article> 
+
         </main>
 
         <aside class="sidebar">
             <div>
-                <h1>Objetivos</h1>
-                <p>En un mundo cada vez más interconectado, la ciberseguridad se ha convertido en un elemento crucial</p>
-                <img src="IMG/OIP (1) (1).jpg" alt="" >
-                         
+
+        </aside>
+        <aside class="sidebar">
+            <div>
+
         </aside>
         
 
