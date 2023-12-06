@@ -7,24 +7,33 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>REDA</title>
     <!-- Font -->
-    <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Manjari&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Manjari">
     <!-- CSS -->
-    <link rel="stylesheet" href="style.css/ESTILOS.CSS">
+    <link rel="stylesheet" href="STYLE/ESTILOS.CSS">
     <!--icons-->
     <link rel="icon" href="IMAGEN/actividadimg.png" type="image/png">
 
     <style>
         body {
-        background-image: url('IMAGEN/security-backactividades.jpg'); 
+        background-image: url('IMG/security-backactividades.jpg'); 
         background-size: cover; 
         background-repeat: no-repeat; 
         background-attachment: fixed; 
+        font-family: 'Manjari', sans-serif;
     }
 
-    
-        
+    .title h1 {
+        padding: 20px 0;
+        text-align: center;
+        font-size: 2.9em;
+        text-transform: uppercase;
+        color: #ffffff;
+        font-family:"Audiowide", sans-serif;
+        text-shadow: 1px 1px 2px #000000, -1px -1px 2px #0c0505;
+       } 
         h1, h2 {
             color: rgb(38, 0, 255);
+            font-family:"Audiowide", sans-serif;
         }
 
         .recuadro {
@@ -41,7 +50,7 @@
     margin-top: 5px;
     color: #070707;
     border-radius: 10px; /* Esquinas redondeadas */
-    box-shadow: 5px 5px 5px #070707;
+    box-shadow: 5px 5px 5px #000000;
 }
 
 .container>.sidebar {
@@ -51,6 +60,16 @@
         background-repeat: repeat; 
         padding: 20px; 
 }
+.container>.card__button {
+        background-color: antiquewhite;
+        color: #0a0909;
+    
+    }
+    .container>.card__button:hover {
+        cursor: pointer;
+        color: rgb(38, 0, 255);
+        background: #e92525(255, 255, 255);
+    }
         
        
         </style>
@@ -82,7 +101,7 @@
         
         <main class="content">
             <article class="article">
-                <center><h1> Evaluaciones </h1>
+                <center><h1><div class="recuadro"> Evaluaciones</div> </h1>
                     <img src="IMAGEN/evaluaciones.png" alt="" width="300px" height="200px"></center>                <p>Bienvenidos al Quiz de Ciberseguridad.</p> 
                     <p>Esta actividad tiene como objetivo evaluar y fortalecer su conocimiento sobre los fundamentos esenciales de la ciberseguridad. La ciberseguridad es un campo crítico en la actualidad, ya que la tecnología desempeña un papel central en nuestra vida cotidiana y empresarial. Proteger la información sensible y los sistemas contra amenazas cibernéticas es crucial para garantizar la integridad, confidencialidad y disponibilidad de los datos.</p>
                     <p>Durante este cuestionario, se presentarán preguntas relacionadas con diversos aspectos de la ciberseguridad, desde conceptos básicos hasta temas más avanzados. Estas preguntas abarcarán temas como la protección contra malware, el cifrado de datos, la autenticación, las amenazas persistentes avanzadas y las mejores prácticas para mantener seguros los sistemas y la información.</p>

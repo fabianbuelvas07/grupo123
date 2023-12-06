@@ -102,6 +102,7 @@ html {
     align-items: center;
     justify-content: center;
     transition: all 0.5s ease;
+   
 }
 
 .container>.card__button:hover {
@@ -115,7 +116,7 @@ h1 {
     color: #000000;
 }
 dd {
-    color: #302c2c;
+    color: #000000;
 }
 strong {
     font-weight: bold;
@@ -135,7 +136,8 @@ summary {
     padding: 10px; /* Espaciado interno */
     border: 2px solid #000; /* Borde sólido de 2 píxeles de grosor */
     border-radius: 10px; /* Esquinas redondeadas */
-    background-color: #ecdaa7; /* Color de fondo */
+    background-color: #e77314; /* Color de fondo */
+    box-shadow: 5px 5px 5px #070707;
 }
 .contenedor-enlaces {    
     -webkit-border-radius: 5px;

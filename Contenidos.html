@@ -7,18 +7,82 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>REDA</title>
     <!-- Font -->
-    <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Manjari&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Manjari">
     <!-- CSS -->
-    <link rel="stylesheet" href="style.css/ESTILOS.CSS">
+    <link rel="stylesheet" href="STYLE/ESTILOS.CSS">
     <!--icons-->
     <link rel="icon" href="IMAGEN/contenidoimg.png" type="image/png">
 </head>
 
 <body>
     <style>
-        .sidebar{
-            background-color: aquamarine;
-        }
+        * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        
+        font-family: 'Manjari', sans-serif;
+    }
+    h1{
+        font-family:"Audiowide", sans-serif;
+    
+    }
+    .title h1 {
+        padding: 20px 0;
+        text-align: center;
+        font-size: 2.9em;
+        text-transform: uppercase;
+        color: #db2222;
+        font-family:"Audiowide", sans-serif;
+        text-shadow: 1px 1px 2px #000000, -1px -1px 2px #0c0505;
+    }
+    
+    .container>.header, .container>.footer {
+        grid-column: 1/-1;
+        background-color: rgb(235, 37, 37);
+        color: #ffffff;
+    }
+    
+    .container>.content {
+        grid-column: span 4;
+        grid-row: span 3;
+    }
+    
+    .content>.article {
+        background: #4b63e9e8;
+        padding: 20px;
+        margin-top: 5px;
+        color: #070707;
+        border-radius: 10px; /* Esquinas redondeadas */
+        box-shadow: 5px 5px 5px #070707;
+    }
+    
+    .container>.sidebar {
+        grid-column: span 2;
+        grid-row: span 2;
+        background: rgb(124, 119, 112);
+        color: #181515;
+        display: relative;
+        align-items: relative;
+        justify-content: center;
+        background-position: center;
+        background-repeat: repeat; 
+        padding: 20px; 
+        background-size: auto; 
+    }
+    
+    .container>.card__button {
+        background-color: antiquewhite;
+        color: #0a0909;
+    
+    }
+    .container>.card__button:hover {
+        cursor: pointer;
+        color: #e94b4be8;
+        background: #e92525(255, 255, 255);
+    }
     </style>
 
     <header class="title">
@@ -210,12 +274,12 @@ Sin embargo, la seguridad en la nube también está parcialmente en manos del cl
  
 <aside class="sidebar">
     <div>
-        <img src="IMAGEN/ciberseguridad.jpg" alt="" >
+        <img src="IMG/ciberseguridad.jpg" alt="" >
         <img src="IMAGEN/Ciber.jpg" alt="" >
         <img src="IMAGEN/Seguridad.jpg" alt="" >
         <img src="IMAGEN/seguridad1.jpg" alt="" >
         <img src="IMAGEN/ciber1.jpg" alt="" >
-        <strong>Historia de la ciberseguridad</strong>
+        <h1>Historia de la ciberseguridad</h1>
 
             <p>La evolución de la ciberseguridad brinda un contexto más amplio de cómo fue la transformación al mundo digital y los riesgos que surgieron con este cambio.
             
